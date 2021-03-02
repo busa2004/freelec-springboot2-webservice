@@ -5,6 +5,8 @@
 .idea
 
 application-oauth.properties
+application.properties
+application-real2.properties
 application-real-db.properties
 build
 out
