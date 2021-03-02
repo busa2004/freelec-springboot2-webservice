@@ -23,6 +23,9 @@
                 <th>게시글번호</th>
                 <th>제목</th>
                 <th>작성자</th>
+                <th>가격</th>
+                <th>개수</th>
+                <th>매수일</th>
                 <th>최종수정일</th>
             </tr>
             </thead>
@@ -32,6 +35,9 @@
                     <td>{{id}}</td>
                     <td><a href="/posts/update/{{id}}">{{title}}</a></td>
                     <td>{{author}}</td>
+                    <td>{{price}}</td>
+                    <td>{{count}}</td>
+                    <td>{{buyDate}}</td>
                     <td>{{modifiedDate}}</td>
                 </tr>
             {{/posts}}

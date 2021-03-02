@@ -28,15 +28,31 @@ public class Posts extends BaseTimeEntity {
 
     private String author;
 
+    @Column
+    private Long price;
+
+    @Column
+    private Long count;
+
+    @Column
+    private String buyDate;
+
+
     @Builder
-    public Posts(String title, String content, String author) {
+    public Posts(String title, String content, String author,Long price,Long count,String buyDate ) {
         this.title = title;
         this.content = content;
         this.author = author;
+        this.price = price;
+        this.count = count;
+        this.buyDate = buyDate;
     }
 
-    public void update(String title, String content) {
+    public void update(String title, String content,Long price,Long count,String buyDate) {
         this.title = title;
         this.content = content;
+        this.price = price;
+        this.count = count;
+        this.buyDate = buyDate;
     }
 }
